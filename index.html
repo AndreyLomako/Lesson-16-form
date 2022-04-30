@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson-16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <form class="form__make make-form" action="#">
+                <div class="make-form__container">
+                    <div class="make-form__body">
+                        <div class="make-form__title">Make an appointment</div>
+                        <div class="make-form__name">
+                            <input class="make-form__input" required name="username" value="" placeholder="Name" type="text">
+                            <input class="make-form__input" required name="useremail" value="" placeholder="Email" type="email">
+                        </div>
+                        <div class="make-form__phone">
+                            <input class="make-form__input" required name="phone" value="" placeholder="Phone Number" type="tel">
+                            <input class="make-form__input" required name="service" value="" placeholder="Select Service" type="text">
+                        </div>
+                        <div class="make-form__area">
+                            <textarea class="make-form__textarea" placeholder="Tell us about your puppers include his/her name" name="text"></textarea>
+                        </div>
+                    <div class="make-form__button button-make">
+                        <button class="button-make__item" type="submit">Make an Appointment</button>
+                    </div>
+                    </div>
+            </div>
+            </form>
+            <div class="summary">
+                <div class="summary__container">
+                    <div class="summary__content">
+                        <div class="summary__title">Summary</div>
+                        <div class="summary__text">Estimate Shipping and Tax</div>
+                        <div class="summary__sub-text">Enter your destination to get a shipping estimate.</div>
+                        <form action="#" class="summary__form form-summary">
+                            <label class="form-summary__label" for="country">Country</label>
+                            <select class="form-summary__select" name="country" id="country">
+                                <option value="">Australia</option>
+                                <option value="">UK</option>
+                                <option value="">Russia</option>
+                            </select>
+                            <div class="form-summary__state">
+                                <label class="form-summary__label" for="state">State/Province</label>
+                                <input class="form-summary__input" required id="state" type="text">
+                            </div>
+                            <div class="form-summary__zip">
+                                <label class="form-summary__label" for="zip">Zip/Postal Code</label>
+                                <input class="form-summary__input" required id="zip" type="text">
+                            </div>
+                            <div class="radio">
+                                <div class="radio__standart">
+                                    <label class="radio__label-black">Standard Rate</label>
+                                    <input class="radio__input" id="standart" name="radio-button" type="radio">
+                                    <label class="radio__label" for="standart">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>  
+                                </div>
+                                <div class="radio__pickup">
+                                    <label class="radio__label-black">Pickup from store</label>
+                                    <input class="radio__input" id="pickup" name="radio-button" type="radio">
+                                    <label class="radio__label" for="pickup">1234 Street Adress City Address, 1234 $0.00        
+                                    </label>                               
+                                </div>
+                            </div>
+                            <div class="form-summary__apply apply-form">
+                                <div class="apply-form__title">Apply Discount Code</div>
+                                <label class="apply-form__label" for="enter">Enter discount code</label>
+                                <input class="apply-form__input" id="enter" name="enter" required type="text">
+                            </div>
+                            <div class="summary__button button-summary">
+                                <button class="button-summary__item" type="submit">Apply Discount</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="registered">
+                <div class="registered__container">
+                    <div class="registered__content">
+                        <div class="registered__title">Registered Customers</div>
+                        <div class="registered__sub-title">If you have an account, sign in with your email address.</div>
+                        <form action="#" class="registered__form form-registered">
+                            <div class="form-registered__email">
+                                <label class="form-registered__label" for="email">Email</label>
+                                <input required name="useremail" id="email" class="form-registered__input" placeholder="Your Name" type="email">
+                            </div>
+                            <div class="form-registered__password">
+                                <label class="form-registered__label" for="pass">Password</label>
+                                <input required name="userpass" id="pass" class="form-registered__input" placeholder="Your Name" type="password">
+                            </div>
+                            <div class="form-registered__button button-registered">
+                                <button class="button-registered__sign-in">Sign In</button>
+                                <button class="button-registered__reset-password" >Forgot Your Password?</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+</div>
+</body>
+</html>

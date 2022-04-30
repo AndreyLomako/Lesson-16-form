@@ -1,0 +1,324 @@
+@import url(../css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&&display=swap");
+.wrapper{
+    overflow: hidden; 
+    min-height: 100%;
+    padding: 10px;
+}
+.make-form__container{
+    max-width: 585px;
+    margin: 0 auto;
+}
+.make-form__title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.16;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 43px;
+}
+.make-form{
+    font-family: "Roboto";
+    margin-bottom: 15px;
+}
+.make-form__body{
+    background-color: #5D62B5;
+    border-radius: 40px;
+    padding: 76px 57px;
+    display: flex;
+    flex-direction: column;
+}
+.make-form__name{
+    display: flex;
+    column-gap: 22px;
+    justify-content: center;
+    margin-bottom: 22px;   
+}
+.make-form__phone{
+    display: flex;
+    column-gap: 22px;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.make-form__textarea{
+    max-width: 470px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    border: 2px solid #FFFFFF;
+    background-color: #5D62B5;
+    border-radius: 10px;
+    resize: none;
+    padding: 17px 23px;
+    color: #FFFFFF;
+}
+.button-make{
+    display: flex;
+    justify-content: flex-end; 
+}
+.button-make__item{
+    background-color: #F2726F;
+    padding: 12px 30px; 
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    border-radius: 2px;
+    max-width: 210px;
+    width: 100%;
+    cursor: pointer; 
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+}
+.make-form__input{
+    background-color: #5D62B5;
+    outline: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 48px;
+    max-width: 220px;
+    width: 100%;
+    padding: 17px 23px;
+    color: #FFFFFF;
+}
+input::placeholder{
+    color: #FFFFFF;
+    font-family: "Roboto";
+    letter-spacing: 0.15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.make-form__textarea::placeholder{
+    color: #FFFFFF;  
+    font-family: "Roboto";
+    letter-spacing: 0.15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.summary{
+    font-family: "Poppins";
+    color: #000000;  
+    margin-bottom: 15px;
+}
+.summary__container{
+    max-width: 446px;
+    width: 100%;
+    margin: 0 auto;
+}
+.summary__content{
+    background-color: #F5F7FF;
+    padding: 17px 30px;
+}
+.summary__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 19px;
+}
+.summary__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+.summary__sub-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 13px;
+    max-width: 287px;
+    width: 100%;
+}
+.summary__form{
+    position: relative;
+}
+.form-summary{
+    display: flex;
+    flex-direction: column;
+}
+.form-summary__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.form-summary__select{
+    max-width: 386px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #A2A6B0;
+}
+.form-summary__input{
+    max-width: 386px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #A2A6B0;
+    padding: 10px;
+}
+.form-summary__zip{
+    margin-bottom: 17px;
+}
+.radio-button{
+    position: relative;
+    display: flex;
+}
+.radio__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -9999;
+}
+.radio__label::before{
+    content: "";
+    background-color: #FFFFFF;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    display: inline-block;
+    left: 0;  
+    border-radius: 50%;
+    border: 2px solid #0156FF;
+}
+.radio__label{
+    position: relative;
+    padding-left: 30px;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+    cursor: pointer;
+}
+.radio__input:checked + .radio__label::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #0156FF;
+}
+.radio__label-black{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.radio__pickup:last-child{
+    margin-bottom: 29px;
+}
+.apply-form__input{
+    max-width: 386px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #A2A6B0;
+    padding: 10px;
+    margin-bottom: 19px;
+}
+.apply-form__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.apply-form__title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+.button-summary__item{
+    color: #0156FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #0156FF;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    max-width: 386px;
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+}
+.registered{
+    font-family: "Poppins";
+    color: #000000;
+}
+.registered__content{
+    padding: 37px 57px 41px 57px;
+    background-color: #F5F7FF;
+}
+.registered__container{
+    max-width: 564px;
+    width: 100%;
+    margin: 0 auto;
+}
+.registered__title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.registered__sub-title{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2.14; 
+    margin-bottom: 10px;
+}
+.form-registered__label{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.form-registered__input{
+    border: 1px solid #A2A6B0;
+    outline: none;
+    border-radius: 4px;
+    max-width: 449px;
+    width: 100%;
+    padding: 13px 0 13px 17px;
+}
+.form-registered__input::placeholder{
+    color: #A2A6B0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.43;
+}
+.form-registered__email{
+    margin-bottom: 6px;
+}
+.form-registered__password{
+    margin-bottom: 31px;
+}
+.button-registered__sign-in{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #0156FF;
+    border-radius: 50px;
+    max-width: 151px;
+    width: 100%;
+    padding: 15px 47px;
+    cursor: pointer;
+    margin-right: 43px;
+}
+.button-registered__reset-password{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #0156FF;
+    cursor: pointer;
+}
